@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="utf-8">
+    <title>Zinema Usurbil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 28px;
+            vertical-align: middle;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            border-bottom: 5px solid #f3d9d9;
+            background-color: #f3d9d9;
+        }
+
+        .logoa img {
+            width: 50px;
+            height: 50px;
+       
+        }
+
+        .hanburguesamenua,
+        .hanburguesamenuaitxi {
+            background-color: transparent;
+            border: none;
+            padding: 6px 8px;
+            cursor: pointer;
+        }
+
+        .nabigazioa {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+        }
+
+
+        .menua {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menua li {
+            padding: 0;
+        }
+
+        .menua li a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+        }
+
+        .orrinagusiapelikulak {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .orrinagusiapelikulak img {
+            display: block;
+            width: 300px;
+            height: 400px;
+        }
+
+        .orrinagusiapelikulak figure {
+            text-align: center;
+            width: 300px;
+            height: auto;
+        }
+
+        .orrinagusiapelikulak figcaption {
+            margin-top: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-top: 5px solid #f3d9d9;
+            background-color: #f3d9d9;
+        }
+
+        .orrinagusiapelikulak {
+            background-color: #ffffff;
+
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .kontaktua {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logoa"><img src="/img/logozinema.png" alt="logoa"></div>
+        <h1>Zinema Usurbil</h1>
+
+        <nav class="nabigazioa">
+            <div class="iconos">
+                <button class="hanburguesamenua" aria-label="Ireki menua">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <button class="hanburguesamenuaitxi" aria-label="Itxi menua">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <ul class="menua">
+                <li><a href="index2.html">Orrialde nagusia</a></li>
+                <li><a href="kartelera.html">Kartelera</a></li>
+                <li><a href="#">Balorazioak</a></li>
+                <li><a href="#">Informazioa</a></li>
+                <li><a href="#">Saskia</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+<main>
+    <div class="orrinagusiapelikulak">
+        <figure><img src="/img/minecraftpelikula.jpg" alt="minecraftpelikula">
+            <figcaption>La pelicula minecraft</figcaption>
+        </figure>
+        <figure><img src="/img/sonic3.jpg" alt="Sonic3">
+            <figcaption>Sonic 3</figcaption>
+        </figure>
+        <figure><img src="/img/thunderbolts.jpg" alt="Thunderbolts">
+            <figcaption>Thunderbolt</figcaption>
+        </figure>
+    </div>
+</main>
+<footer>
+    <div class="logoa">
+        <a href="index.html"><img src="/img/logozinema.png" alt="logoa" width="50" height="50">
+        </a>
+    </div>
+
+    <div>
+        <ul class="legala">
+            <li><a href="#"></a>Ohar legala</li>
+            <li><a href="#"></a>Cookies</li>
+            <li><a href="#"></a> Creative Commons</li>
+        </ul>
+
+    </div>
+    <ul class="nabigazioafooter">
+        <li><a href="">Orrialde nagusia</a></li>
+        <li><a href="">Kartelera</a></li>
+        <li><a href="">Balorazioak</a></li>
+        <li><a href="">Informazioa</a></li>
+        <li><a href="Saskia.html">Saskia</a></li>
+    </ul>
+    <div class="informazioa">
+        <address class="kontaktua">
+            <ul>
+                <li>
+                    <a href="http://instagram.com" target="_blank">
+                        <img src="instagram.webp" alt="Instagram" width="30" height="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:ikpgarrastazu25@lhusurbil.eus">
+                        <img src="mail.png" alt="Emaila" width="30" height="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/U4ViMwwziz418LYK9" target="_blank">
+                        <img src="ubi.png" alt="Direkzioa" width="30" height="30">
+                    </a>
+                </li>
+            </ul>
+        </address>
+    </div>
+</footer>
+</body>
+
+</html>
