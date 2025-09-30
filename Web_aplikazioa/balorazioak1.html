@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balorazioak 1</title>
+    <title>Balorazioa</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,14 +59,72 @@
             text-align: center;
             padding: 10px 0;
         }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin: 0 15px;
+        }
+
+        .hamburger span {
+            height: 3px;
+            width: 25px;
+            background: white;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: 0.4s;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .hamburger {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                margin: 0 15px;
+            }
+
+            .hamburger span {
+                height: 3px;
+                width: 25px;
+                background: white;
+                margin: 4px 0;
+                border-radius: 2px;
+                transition: 0.4s;
+            }
+
+            .menu-toggle:checked~ul {
+                display: flex;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="img/Logo1.png" alt="Zure Zinema Logo" style="height: 40px; vertical-align: middle;">
+        <img src="img/Logo1.png" alt="Logo" style="height: 50px;">
         <h1>Balorazioak</h1>
         <nav>
-            <ul>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul id="nav-list">
                 <li><a href="index1.html">Hasiera</a></li>
                 <li><a href="kartelera1.html">Kartelera</a></li>
                 <li><a href="informazioa1.html">Informazioa</a></li>
