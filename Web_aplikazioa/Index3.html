@@ -19,29 +19,33 @@
        }
        
         header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
         }
-        .logoa{
-            width:100%;
-           display:flex;
-           justify-content: flex-start;
+        .logoa {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex: 0 0 auto;
         }
-       
-      .menua>li{
-        padding: 12px;
-       
-      }
-      .menua>a{
-        color:white;
-      }
-      
-       .menua{
-        justify-content: center;
-        display: flex;
-        list-style-type: none;
-       }
+        .menua {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            flex: 1 1 auto;
+            margin: 0;
+            padding: 0;
+        }
+        .menua > li {
+            padding: 12px;
+        }
+        .menua > li > a {
+            color: white;
+            text-decoration: none;
+        }
        p{
         font-size: large;
         font-family:cursive;
@@ -74,11 +78,11 @@
         <li><a href="Saskia.html"style="color:white">Saskia</a></li>
         <li><a href="Balorazioa.html"style="color:white">Balorazioa</a></li>
     </ul>
+    </header>
     <h1>Zinema Usurbil</h1>
    
-    </header>
     <main>
-     
+    
     </main>
     <footer>
         <ul class="saresozialak">
