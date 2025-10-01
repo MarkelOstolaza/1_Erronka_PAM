@@ -99,12 +99,55 @@
             font-size: 16px;
             text-align: center;
         }
+        .balorazioak {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .balorazioak h2 {
+            text-align: center;
+        }
+        .balorazioak label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .balorazioak input,
+        .balorazioak select,
+        .balorazioak textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .balorazioak button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .balorazioak button:hover {
+            background-color: #45a049;
+        }
+        .balorazioak p {
+            text-align: center;
+            margin-top: 15px;
+            font-style: italic;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="logoa"><img src="logozinema.png" alt="logoa"></div>
+        <div class="logoa"><img src="img/logozinema.png" alt="logoa"></div>
         <h1>Zinema Usurbil</h1>
 
         <nav class="nabigazioa">
@@ -126,12 +169,55 @@
             </ul>
         </nav>
     </header>
+<main>
+    <section class="balorazioak">
+        <h2>Zure iritzia utzi</h2>
+        <form action="#">
+            <label for="pelikula">Pelikula aukeratu:</label>
+            <select id="pelikula" name="pelikula">
+                <option> </option>
+                <option>Lilo y Stitch</option>
+                <option>Una pelicula de Minecraft</option>
+                <option>Mufasa:El rey Leon</option>
+                <option>Como entrenar a tu dragón</option>
+                <option>Capitán América: Brave New World</option>
+                <option>Conclave</option>
+                <option>Sonic 3: La película</option>
+                <option>Misión Imposible. Sentencia Final</option>
+                <option>Blancanieves</option>
+                <option>Thunderbolt</option>
+                <option>Padre no hay más que uno 5</option>
+                <option>Wolfgang(Extraordinario)</option>
+                <option>El casoplón</option>
+                <option>Un funeral de locos</option>
+                <option>Sirāt</option>
+                </select><br><br>
+                <label for="izena">Zure izena:</label>
+                <input type="text" id="izena" name="izena" ><br><br>
+                <label for="email">Zure emaila:</label>
+                <input type="email" id="email" name="email" ><br><br
+                <label for="balorazioa">Zure balorazioa:</label>
+                <select id="balorazioa" name="balorazioa">
+                    <option> </option>
+                    <option>⭐</option>
+                    <option>⭐⭐</option>
+                    <option>⭐⭐⭐</option>
+                    <option>⭐⭐⭐⭐</option>
+                    <option>⭐⭐⭐⭐⭐</option>
+                    </select><br><br>
+                <label for="iruzkina">Zure iruzkina:</label>
+                <textarea id="iruzkina" name="iruzkina" rows="4" cols="50" ></textarea><br><br>
+                <button type="submit">Bidali</button>
+                </form>
+                <p><em>Eskerrik asko zure iritziagatik</em></p>
+    </section>
+            </main>
+                
 
-    <main></main>
 
     <footer>
         <div class="logoa">
-            <a href="index.html"><img src="logozinema.png" alt="logoa" width="50" height="50"></a>
+            <a href="index.html"><img src="img/logozinema.png" alt="logoa" width="50" height="50"></a>
         </div>
 
         <div>
